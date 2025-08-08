@@ -1,6 +1,6 @@
 import 'dotenv/config';
 import express from 'express';
-import { middleware, Client } from 'line-bot-sdk';
+import { middleware, Client } from '@line/bot-sdk';
 import OpenAI from 'openai';
 import cron from 'node-cron';
 
