@@ -1,3 +1,9 @@
+// 加在 app.use 之前或任何路由之前都行
+app.get('/webhook', (_req, res) => {
+  // LINE 驗證用，回 200 就過
+  res.status(200).send('OK');
+});
+
 import 'dotenv/config';
 import express from 'express';
 import { middleware, Client } from '@line/bot-sdk';
